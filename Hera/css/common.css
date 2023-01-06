@@ -1,0 +1,47 @@
+html {
+  line-height: 100px;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+::selection {
+  background: #46166b;
+  color: #fff;
+  text-shadow: none;
+}
+
+.section__inner {
+  padding: 0 6.25vw;
+}
+
+.gnb__menu--link::after,
+.gnb__menu.is-current .gnb__menu--link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.gnb__menu:hover .gnb__menu--link::after,
+.gnb__menu.is-current .gnb__menu--link::after {
+  width: 100%;
+  background-color: #000;
+}

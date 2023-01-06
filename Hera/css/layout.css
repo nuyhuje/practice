@@ -1,0 +1,73 @@
+header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+header .header__inner {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header .header__logo,
+header .gnb,
+header .utility {
+  flex: none;
+}
+
+header .header__logo .header__logo--link {
+  display: block;
+  padding: 25px 0 15px;
+  width: 104px;
+}
+header .header__logo .logo-img {
+  fill: #000;
+  vertical-align: top;
+  width: 104px;
+  height: 18px;
+}
+
+header nav .gnb {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 36px;
+}
+header nav .gnb .gnb__menu {
+  font-size: 14px;
+  color: #666;
+  margin-left: 18px;
+}
+header nav .gnb .gnb__menu:first-child {
+  margin: 0;
+}
+header nav .gnb .gnb__menu .gnb__menu--link {
+  display: block;
+  padding: 23px 9px 19px;
+  position: relative;
+}
+header nav .gnb .gnb__menu.is-current {
+  font-weight: 600;
+  color: #000;
+}
+
+header .utility {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+header .utility .utility__btn {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  display: block;
+  margin-left: 5px;
+}
