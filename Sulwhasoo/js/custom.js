@@ -21,6 +21,6 @@ $(".scroll-top-button").click(function(){
 function video_play(button, frame) {
   $('#' + button).hide();
   $('#' + frame)[0].src += "?autoplay=1&mute=1";
+  // $('.promotion__video--button').hide();
+  // $('#youtube-player')[0].src += "?autoplay=1&mute=1";
 };
-// $('.promotion__video--button').hide();
-// $('#youtube-player')[0].src += "?autoplay=1&mute=1";

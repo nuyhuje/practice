@@ -2,59 +2,6 @@
   @return calc($target / $base) * 100vw; 
 }
 
-body {
-  font-family: "Noto Sans", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
-  font-size: 1em;
-  line-height: 1.5;
-  letter-spacing: -.07em;
-  word-spacing: 0.05em;
-}
-
-.scroll-top-button {
-  display: block;
-  position: fixed;
-  bottom: -60px;
-  right: 21%;
-  width: 60px;
-  height: 60px;
-  background-color: #000;
-  opacity: 0.3;
-  z-index: 100;
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.75;
-  }
-
-  &.is-active {
-    bottom: 0;
-  }
-}
-// .promotion-button {
-//   width: 60px;
-//   height: 60px;
-//   z-index: 100;
-//   position: fixed;
-//   bottom: -60px;
-//   right: 21%;
-//   background-color: #000;
-//   opacity: 0.3;
-//   transition: all .2s ease-out;
-  
-//   &:hover {
-//     opacity: 0.75;
-//   }
-
-//   &.is-active {
-//     bottom: 0;
-//   }
-
-//   .scroll-top-button {
-//     display: block;
-//   }
-// }
-
 .promotion-section {
   .promotion__video {
     width: 57.1354166667vw;

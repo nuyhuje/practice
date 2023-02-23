@@ -2,7 +2,7 @@ body {
   font-family: "Noto Sans", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  letter-spacing: -0.07em;
+  letter-spacing: -.07em;
   word-spacing: 0.05em;
 }
 
@@ -13,12 +13,6 @@ body {
   height: 1px;
   margin: -1px;
   overflow: hidden;
-}
-
-::-moz-selection {
-  background-color: #9F694D;
-  color: #fff;
-  text-shadow: none;
 }
 
 ::selection {
@@ -39,11 +33,13 @@ body {
   z-index: 100;
   transition: all 0.2s ease-out;
   cursor: pointer;
+
+  &:hover {
+    background-color: #000;
+    opacity: 0.75;
+  }
+
+  &.is-active {
+    bottom: 0;
+  }
 }
-.scroll-top-button:hover {
-  background-color: #000;
-  opacity: 0.75;
-}
-.scroll-top-button.is-active {
-  bottom: 0;
-}/*# sourceMappingURL=common.css.map */
