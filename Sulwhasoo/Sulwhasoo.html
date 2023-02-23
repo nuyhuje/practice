@@ -32,23 +32,20 @@
 		<section class="promotion-section promotion-section--video">
 			<h3 class="blind">자음생세럼</h3>
 			<div class="promotion__content">
-				<div class="promotion__video promotion__video--01" data-aos="fade-up">
+				<div class="promotion__video" data-aos="fade-up">
 					<div class="video-youtube">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/BOnnR4rQ1Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe id="youtube-01" src="https://www.youtube.com/embed/BOnnR4rQ1Lg" title="설화수 자음생세럼 | 깊은 곳부터 살아나는 탄탄한 피부 (제품편)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
-					<button class="promotion__video--button" type="button">
-						<span class="blind">설화수 자음생세럼 제품 영상 재생</span>
+					<button id="youtube-btn-01" class="promotion__video--button" type="button" onclick="video_play('youtube-btn-01', 'youtube-01');">
+						<span class="blind">설화수 자음생세럼 제품 영상 재생하기</span>
 					</button>
 				</div>
 				<div class="text-wrapper" data-aos="fade-up">
 					<p class="promotion__text">
-						설화수의 특허 받은 10만개의 진세노믹스™ 캡슐로<br>
-						7일만에 채우고 세우고 당기는
+						설화수의 특허 받은 10만개의 진세노믹스™ 캡슐로<br>7일만에 채우고 세우고 당기는
+						<em class="promotion__text promotion__text-name">3중 탄력 안티에이징 세럼</em>
 					</p>
-					<p class="promotion__text promotion__text-name">
-						3중 탄력 안티에이징 세럼
-					</p>
-					<span class="promotion__text promotion__text-tags">
+					<span class="promotion__text promotion__text-hashtag">
 						<em>#진세노믹스™캡슐</em>
 						<em>#3중탄력</em>
 						<em>#캡슐세럼</em>
@@ -57,8 +54,8 @@
 			</div>
 		</section><!-- // Section 02 -->
 
-		<section class="promotion-section promotion-section--information" data-aos="fade-up">
-			<div class="promotion__content" data-aos="fade-up">
+		<section class="promotion-section promotion-section--detail" data-aos="fade-up">
+			<div class="promotion__content">
 				<div class="product-information">
 					<div class="product-wrapper">
 						<div class="product-badge" data-aos="fade-up">
@@ -84,11 +81,11 @@
 							<a href="https://www.amoremall.com/kr/ko/product/detail?onlineProdSn=50759&onlineProdCode=111170001159" class="product__button product__button-checkout">구매하러 가기</a>
 						</div>
 					</div>
-				</div><!-- // product-information -->
+				</div>
+
 				<div class="product-image">
-					<img src="https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_info_thumbnail_pc.jpg"
-						alt="설화수 자음생세럼" data-aos="zoom-out">
-				</div><!-- // product-image -->
+					<img src="https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_info_thumbnail_pc.jpg" alt="설화수 자음생세럼" data-aos="zoom-out">
+				</div>
 			</div>
 		</section><!-- // Section 03 -->
 
@@ -96,7 +93,7 @@
 			<div class="banner-inner">
 				<p class="promotion-text">
 					<em>단 7일만에</em>
-					채우고 세우고 당기는<br>
+					채우고 세우고 당기는
 					<em>3중 탄력 효과</em>
 				</p>
 			</div>
@@ -104,14 +101,12 @@
 
 		<section class="promotion-section promotion-section--proof">
 			<div class="promotion__content">
-				<div class="promotion__video promotion__video--02" data-aos="fade-up">
+				<div class="promotion__video" data-aos="fade-up" data-aos-anchor-placement="top-center">
 					<div class="video-youtube">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/oXrf2OGyQkY" title="YouTube video player"
-							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
+						<iframe id="youtube-02" src="https://www.youtube.com/embed/oXrf2OGyQkY" title="설화수 자음생세럼 | 피부 탄력, 탄력받다 (효능편)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
-					<button class="promotion__video--button" type="button">
-						<span class="blind">설화수 자음생세럼 | 피부 탄력, 탄력받다 (효능편) 영상 재생</span>
+					<button id="youtube-btn-02" class="promotion__video--button" type="button" onclick="video_play('youtube-btn-02', 'youtube-02');">
+						<span class="blind">설화수 자음생세럼 | 피부 탄력, 탄력받다 (효능편) 영상 재생하기</span>
 					</button>
 				</div>
 				<ul class="promotion__list">
@@ -137,6 +132,7 @@
 							</div>
 						</div>
 					</li>
+
 					<li class="promotion__item" data-aos="fade-up">
 						<div class="item-image">
 							<img src="https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_benefit-thumb02_pc.jpg" alt="">
@@ -159,6 +155,7 @@
 							</div>
 						</div>
 					</li>
+
 					<li class="promotion__item" data-aos="fade-up">
 						<div class="item-image">
 							<img src="https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_benefit-thumb03_pc.jpg" alt="">
@@ -183,9 +180,7 @@
 					</li>
 				</ul>
 				<div class="test-result" data-aos="fade-up">
-					<span class="text-wrapper">
-						* 자음생세럼 인체 적용 시험 결과(1주 사용)
-					</span>
+					<span class="text-wrapper">* 자음생세럼 인체 적용 시험 결과(1주 사용)</span>
 					<span class="text-wrapper">
 						<span class="text-unit">시험대상: 30, 40대 여성 32명</span>
 						<span class="text-unit">시험기간: 2021.05.31 – 7.30</span>
@@ -217,6 +212,7 @@
 							</ul>
 						</div>
 					</li>
+
 					<li class="promotion__item" data-aos="fade-down" data-aos-delay="100">
 						<div class="item-image">
 							<img src="https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_effect-section_thumb02_pc.jpg" alt="">
@@ -236,6 +232,7 @@
 							</ul>
 						</div>
 					</li>
+
 					<li class="promotion__item" data-aos="fade-down" data-aos-delay="200">
 						<div class="item-image">
 							<img src="https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_effect-section_thumb03_pc.jpg" alt="">
@@ -349,8 +346,82 @@
 
 		<a class="scroll-top-button is-active" title="본문으로">
 			<img src="https://www.sulwhasoo.com/kr/ko/resource/img/a/top.png" alt="페이지 최상단으로 이동">
-		</a><!-- // Scroll Top Button -->
+		</a>
 	</main>
+
+	<footer>
+		<div class="footer__top">
+			<div class="footer__inner">
+				<ul class="footer__menu">
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">회사소개</a>
+					</li>
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">서비스이용약관</a>
+					</li>
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">UGC이용약관</a>
+					</li>
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">개인정보처리방침</a>
+					</li>
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">영상정보처리방침</a>
+					</li>
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">사이트맵</a>
+					</li>
+					<li class="menu-list">
+						<a href="#" class="menu-list__link">로그인</a>
+					</li>
+				</ul>
+				<ul class="footer__menu-sns">
+					<li class="menu-list">
+						<a href="#" class="menu-list__link" title="WA인증마크 (새창)" target="_blank">
+							<i>
+								<span class="blind">(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크 (WA인증마크)</span>
+							</i>
+						</a>
+						<a href="#" class="menu-list__link" title="설화수 페이스북 (새창)" target="_blank">
+							<i>
+								<span class="blind">설화수 페이스북</span>
+							</i>
+						</a>
+						<a href="#" class="menu-list__link" title="설화수 인스타그램 (새창)" target="_blank">
+							<i>
+								<span class="blind">설화수 인스타그램</span>
+							</i>
+						</a>
+						<a href="#" class="menu-list__link" title="설화수 유튜브 (새창)" target="_blank">
+							<i>
+								<span class="blind">설화수 유튜브</span>
+							</i>
+						</a>
+						<a href="#" class="menu-list__link" title="설화수 카카오톡채널 (새창)" target="_blank">
+							<i>
+								<span class="blind">설화수 카카오톡채널</span>
+							</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- // Footer Top -->
+
+		<div class="footer__bottom">
+			<div class="footer__inner">
+				<address>
+					<span>고객서비스센터(수신자요금부담) : </span>
+					<span>080-023-5454 </span>
+					<span>(월~금: AM 09:00~PM 06:00)</span>
+				</address>
+				<span class="footer__copyright">
+					© 
+					<strong>AMOREPACIFIC</strong>
+					CORPORATION. All rights reserved.
+				</span>
+			</div>
+		</div><!-- // Footer Bottom -->
+	</footer>
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

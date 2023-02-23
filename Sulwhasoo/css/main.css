@@ -20,21 +20,30 @@ body {
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
+
 .scroll-top-button:hover {
   opacity: 0.75;
 }
+
 .scroll-top-button.is-active {
   bottom: 0;
 }
 
-.promotion-section {
-  position: relative;
-}
 .promotion-section .promotion__video {
-  height: 31.25vw;
-  position: relative;
+  width: 57.1354166667vw;
+  margin: 0 auto;
 }
 .promotion-section .promotion__video .video-youtube {
+  position: relative;
+  height: 0;
+  padding-bottom: 31.25vw;
+  overflow: hidden;
+}
+.promotion-section .promotion__video .video-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
 }
 .promotion-section .promotion__video--button {
@@ -68,12 +77,12 @@ body {
   top: 44%;
   right: 28%;
 }
-.promotion-section--visual .text-wrapper .promotion__title {
+.promotion-section--visual .promotion__title {
   display: block;
   width: 20.8vw;
   padding-bottom: 2vw;
 }
-.promotion-section--visual .text-wrapper .promotion__text {
+.promotion-section--visual .promotion__text {
   width: 24vw;
 }
 .promotion-section--visual .promotion__text--02 {
@@ -89,37 +98,36 @@ body {
 .promotion-section--video .promotion__content {
   text-align: center;
 }
-.promotion-section--video .promotion__content .promotion__video--01 {
-  width: 57.1354166667vw;
-  margin: 0 auto;
-  z-index: 5;
-}
-.promotion-section--video .promotion__content .promotion__video--01 .promotion__video--button {
+.promotion-section--video .promotion__video--button {
   background: url(https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_video-cover01_pc_220616.jpg) no-repeat 50% 50%/cover;
   background-size: cover;
 }
-.promotion-section--video .promotion__content .text-wrapper {
+.promotion-section--video .text-wrapper {
   margin-top: 1.5625vw;
 }
-.promotion-section--video .promotion__content .text-wrapper .promotion__text {
+.promotion-section--video .promotion__text {
   color: #fff;
   font-size: 1.3541666667vw;
   line-height: 1.6;
   letter-spacing: -0.04em;
 }
-.promotion-section--video .promotion__content .text-wrapper .promotion__text-name {
+.promotion-section--video .promotion__text-name {
+  display: block;
   font-size: 1.6666666667vw;
   color: #fffade;
   margin: 1.5625vw 0;
 }
-.promotion-section--video .promotion__content .text-wrapper .promotion__text-tags {
-  line-height: 1.7;
+.promotion-section--video .promotion__text-hashtag {
   display: block;
+  line-height: 1.7;
 }
-.promotion-section--information .promotion__content {
+.promotion-section--detail {
+  overflow: hidden;
+}
+.promotion-section--detail .promotion__content {
   display: flex;
 }
-.promotion-section--information .promotion__content .product-information {
+.promotion-section--detail .product-information {
   width: 50%;
   display: flex;
   align-items: center;
@@ -127,11 +135,10 @@ body {
   flex-direction: column;
   text-align: left;
 }
-.promotion-section--information .promotion__content .product-image {
+.promotion-section--detail .product-image {
   width: 50%;
-  overflow: hidden;
 }
-.promotion-section--information .promotion__content .product-badge span {
+.promotion-section--detail .product-badge span {
   display: inline-block;
   font-size: 1.25vw;
   line-height: 1.2;
@@ -139,12 +146,12 @@ body {
   background-color: #d37025;
   color: #fff;
 }
-.promotion-section--information .promotion__content .product-name {
+.promotion-section--detail .product-name {
   font-size: 2.1875vw;
   font-weight: 600;
   margin-top: 0.5208333333vw;
 }
-.promotion-section--information .promotion__content .product-name--english {
+.promotion-section--detail .product-name--english {
   font-size: 1.25vw;
   margin-top: 0.15625vw;
   color: #4a2d14;
@@ -152,32 +159,32 @@ body {
   letter-spacing: 0.025em;
   font-weight: 300;
 }
-.promotion-section--information .promotion__content .product-description {
+.promotion-section--detail .product-description {
   font-size: 1.25vw;
   margin-top: 1.5625vw;
   font-weight: 300;
 }
-.promotion-section--information .promotion__content .product-text--gray {
+.promotion-section--detail .product-text--gray {
   display: block;
   font-size: 0.9375vw;
   font-weight: 300;
   color: #999;
   margin-top: 0.5208333333vw;
 }
-.promotion-section--information .promotion__content .text-wrapper {
+.promotion-section--detail .text-wrapper {
   margin-top: 1.5625vw;
   font-size: 1.25vw;
   font-weight: 300;
   letter-spacing: -0.025em;
 }
-.promotion-section--information .promotion__content .text-wrapper .product-price {
+.promotion-section--detail .text-wrapper .product-price {
   position: relative;
 }
-.promotion-section--information .promotion__content .text-wrapper .product-price--01 {
+.promotion-section--detail .text-wrapper .product-price--01 {
   padding-right: 1.1458333333vw;
   margin-right: 0.625vw;
 }
-.promotion-section--information .promotion__content .text-wrapper .product-price--01::after {
+.promotion-section--detail .text-wrapper .product-price--01::after {
   display: inline-block;
   content: "";
   position: absolute;
@@ -188,10 +195,10 @@ body {
   width: 0.1041666667vw;
   height: 0.9375vw;
 }
-.promotion-section--information .promotion__content .button-wrapper {
+.promotion-section--detail .button-wrapper {
   margin-top: 3.3854166667vw;
 }
-.promotion-section--information .promotion__content .button-wrapper .product__button {
+.promotion-section--detail .button-wrapper .product__button {
   display: inline-block;
   border: 1px solid;
   padding: 0.625vw 2.96875vw 0.5208333333vw;
@@ -200,21 +207,21 @@ body {
   line-height: 1.9;
   box-sizing: border-box;
 }
-.promotion-section--information .promotion__content .button-wrapper .product__button-more {
+.promotion-section--detail .button-wrapper .product__button-more {
   border-color: #969696;
   color: #000;
 }
-.promotion-section--information .promotion__content .button-wrapper .product__button-checkout {
+.promotion-section--detail .button-wrapper .product__button-checkout {
   background-color: #d37025;
   border-color: #d37025;
   color: #fff;
   margin-left: 0.3645833333vw;
 }
-.promotion-section--information .promotion__content .product__button:hover-more {
+.promotion-section--detail .button-wrapper .product__button-more:hover {
   background-color: #000;
   color: #fff;
 }
-.promotion-section--information .promotion__content .product__button:hover-checkout {
+.promotion-section--detail .button-wrapper .product__button-checkout:hover {
   background-color: #fff;
   color: #d37025;
 }
@@ -249,62 +256,61 @@ body {
   width: 57.8125vw;
   margin: 0 auto;
 }
-.promotion-section--proof .promotion__content .promotion__video--02 {
-  width: 57.2916666667vw;
-  top: -4.9479166667vw;
+.promotion-section--proof .promotion__video {
+  margin-top: -4.9479166667vw;
   border: 5px solid #fcf9f5;
 }
-.promotion-section--proof .promotion__content .promotion__video--02 .promotion__video--button {
+.promotion-section--proof .promotion__video--button {
   background: url(https://www.sulwhasoo.com/kr/ko/resource/img/cover/jaeumsaengSerum/jaeumsaengSerum_kr_video-cover02_pc.jpg) no-repeat 50% 50%/cover;
   background-size: cover;
 }
-.promotion-section--proof .promotion__content .promotion__list {
-  margin-top: 3.3854166667vw;
+.promotion-section--proof .promotion__list {
+  margin-top: 8.385417vw;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item {
+.promotion-section--proof .promotion__item {
   background-color: #fdf8ec;
   height: 16.40625vw;
   display: flex;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item:not(:first-child) {
+.promotion-section--proof .promotion__item:not(:first-child) {
   margin-top: 4.1666666667vw;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-image {
+.promotion-section--proof .item-image {
   width: 18.75vw;
   height: 18.75vw;
   margin: -1.1979166667vw 0 0 2.8645833333vw;
   flex: none;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information {
+.promotion-section--proof .item-information {
   width: 100%;
   padding: 4.0625vw 4.6875vw 0 3.125vw;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .item-text {
+.promotion-section--proof .item-information .item-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   line-height: 1.3;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .item__title {
+.promotion-section--proof .item-information .item__title {
   font-size: 2.0833333333vw;
   font-weight: 600;
   color: #000;
   letter-spacing: -0.04em;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .item__description {
+.promotion-section--proof .item-information .item__description {
   font-size: 1.4583333333vw;
   font-weight: 300;
   color: #000;
   line-height: 1.3;
   letter-spacing: -0.09em;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .text-percent {
+.promotion-section--proof .item-information .text-percent {
   font-size: 3.125vw;
   font-weight: 500;
   color: #c55805;
   letter-spacing: -0.05em;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .text-percent::after {
+.promotion-section--proof .item-information .text-percent::after {
   display: inline-block;
   content: "%";
   font-size: 1.5625vw;
@@ -312,7 +318,7 @@ body {
   letter-spacing: -0.01em;
   margin-left: -0.5208333333vw;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .text-skin {
+.promotion-section--proof .item-information .text-skin {
   display: block;
   text-align: center;
   font-size: 1.4583333333vw;
@@ -322,11 +328,11 @@ body {
   letter-spacing: -0.04em;
   margin-top: 0.5208333333vw;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .text-wrapper--02 {
+.promotion-section--proof .item-information .text-wrapper--02 {
   padding-left: 1.5625vw;
   position: relative;
 }
-.promotion-section--proof .promotion__content .promotion__list .promotion__item .item-information .text-wrapper--02::before {
+.promotion-section--proof .item-information .text-wrapper--02::before {
   display: inline-block;
   content: "";
   width: 0.1041666667vw;
@@ -337,7 +343,7 @@ body {
   transform: translateY(-45%);
   left: 0;
 }
-.promotion-section--proof .promotion__content .test-result {
+.promotion-section--proof .test-result {
   margin-top: 3.125vw;
   text-align: center;
   font-size: 0.9375vw;
@@ -346,19 +352,19 @@ body {
   line-height: 1.9;
   letter-spacing: -0.04em;
 }
-.promotion-section--proof .promotion__content .test-result .text-wrapper {
+.promotion-section--proof .test-result .text-wrapper {
   display: block;
 }
-.promotion-section--proof .promotion__content .test-result .text-unit {
+.promotion-section--proof .test-result .text-unit {
   position: relative;
   padding-right: 1.25vw;
   margin-right: 1.3020833333vw;
 }
-.promotion-section--proof .promotion__content .test-result .text-unit::after {
+.promotion-section--proof .test-result .text-unit::after {
   display: inline-block;
   content: "";
   width: 0.1041666667vw;
-  height: 16px;
+  height: 0.834vw;
   background-color: #7b675b;
   position: absolute;
   top: 50%;
@@ -393,10 +399,10 @@ body {
   letter-spacing: -0.05em;
   color: #322727;
 }
-.promotion-section--effect .item-information .item-information--list {
+.promotion-section--effect .item-information--list {
   margin-top: 0.78125vw;
 }
-.promotion-section--effect .item-information .item-information--list .list-item {
+.promotion-section--effect .item-information--list .list-item {
   font-size: 0.7291666667vw;
   font-weight: 300;
   line-height: 1.57;
