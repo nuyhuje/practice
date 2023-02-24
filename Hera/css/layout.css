@@ -67,7 +67,8 @@ header .utility {
 header .utility .utility__btn {
   width: 18px;
   height: 18px;
-  background: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
   display: block;
   margin-left: 5px;
 }

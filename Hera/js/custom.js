@@ -1,6 +1,5 @@
 $(function() {
-
-  /* Video */
+  /* 영상 자동 재생 */
   document.getElementById('mov01').play();
 
   /* 스크롤 이동 시 모션 */
@@ -20,7 +19,6 @@ $(function() {
     })
   });
 
-
   /* Swiper */
   var swiper = new Swiper(".swiper-hera", {
     slidesPerView: 4,
@@ -33,5 +31,4 @@ $(function() {
       prevEl: ".swiper-button-prev",
     },
   });
-
 });
